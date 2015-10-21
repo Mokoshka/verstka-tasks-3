@@ -1,0 +1,67 @@
+.timetable {
+    text-align: center;
+    border: solid 4px slateblue;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: rgba(230, 230, 250, 0.3);
+    overflow: hidden;
+}
+
+td {
+    border: solid 1px cornflowerblue;
+    position: relative;
+}
+
+tr {
+    height: 40px;
+    position: relative;
+}
+
+tbody tr:nth-child(2n-1) {
+    background-color: rgba(185, 190, 255, 0.3);
+}
+
+thead {
+    background-color: skyblue;
+    border: solid 3px #0075b1;
+}
+
+td:hover {
+    background-color: yellow;
+}
+
+td:hover::after {
+    content: '';
+    height: 10000px;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    background-color: yellow;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 0, 0.7);
+}
+
+input {
+    margin-right: 50px;
+}
+
+button {
+    display: none;
+}
+
+input[type="tel"]:invalid, input[type="email"]:invalid {
+    background-color: #dcaaaa;
+}
+
+input[type="tel"]:valid, input[type="email"]:valid {
+    background-color: lightgreen;
+}
+
+input[type="tel"]:valid ~ input[type="email"]:valid + button[type="submit"]{
+    display: inline-block;
+}
