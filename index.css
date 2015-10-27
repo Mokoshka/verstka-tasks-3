@@ -1,4 +1,5 @@
-.timetable {
+.timetable
+{
     text-align: center;
     border: solid 4px slateblue;
     border-collapse: collapse;
@@ -8,30 +9,36 @@
     overflow: hidden;
 }
 
-td {
+td, th
+{
     border: solid 1px cornflowerblue;
     position: relative;
 }
 
-tr {
+tr
+{
     height: 40px;
     position: relative;
 }
 
-tbody tr:nth-child(2n-1) {
+tbody tr:nth-child(2n-1)
+{
     background-color: rgba(185, 190, 255, 0.3);
 }
 
-thead {
+thead
+{
     background-color: skyblue;
     border: solid 3px #0075b1;
 }
 
-td:hover {
+td:hover
+{
     background-color: yellow;
 }
 
-td:hover::after {
+td:hover::after
+{
     content: '';
     height: 10000px;
     position: absolute;
@@ -42,26 +49,32 @@ td:hover::after {
     background-color: yellow;
 }
 
-tbody tr:hover {
+tbody tr:hover
+{
     background-color: rgba(255, 255, 0, 0.7);
 }
 
-input {
+input
+{
     margin-right: 50px;
 }
 
-button {
+button
+{
     display: none;
 }
 
-input[type="tel"]:invalid, input[type="email"]:invalid {
+input[type="tel"]:invalid, input[type="email"]:invalid
+{
     background-color: #dcaaaa;
 }
 
-input[type="tel"]:valid, input[type="email"]:valid {
+input[type="tel"]:required:valid, input[type="email"]:valid
+{
     background-color: lightgreen;
 }
 
-input[type="tel"]:valid ~ input[type="email"]:valid + button[type="submit"]{
+input[type="tel"]:valid ~ input[type="email"]:valid + button[type="submit"]
+{
     display: inline-block;
 }
