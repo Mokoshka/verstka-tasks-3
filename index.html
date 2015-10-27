@@ -17,15 +17,15 @@
         <table class="timetable">
             <thead>
             <tr>
-                <td>Тип рейса</td>
-                <td>Номер рейса</td>
-                <td>Авиокомпания</td>
-                <td>Логотип авиаокмпании</td>
-                <td>Тип воздушного судна</td>
-                <td>Аэропорт назначения</td>
-                <td>Плановое время вылета или прилета</td>
-                <td>Номер терминала</td>
-                <td>Статус рейса</td>
+                <th>Тип рейса</th>
+                <th>Номер рейса</th>
+                <th>Авиокомпания</th>
+                <th>Логотип авиаокмпании</th>
+                <th>Тип воздушного судна</th>
+                <th>Аэропорт назначения</th>
+                <th>Плановое время вылета или прилета</th>
+                <th>Номер терминала</th>
+                <th>Статус рейса</th>
             </tr>
             </thead>
             <tbody>
@@ -213,9 +213,9 @@
         </table>
     <form>
         <label for="telephone">Телефон</label>
-        <input id="telephone" name="telephone" value="" type="tel" required>
+        <input id="telephone" name="telephone" value="" type="tel" pattern="^(\+7|8)\d{10}" required>
         <label for="email">Email</label>
-        <input id="email" name="email" value="" type="email" required>
+        <input id="email" name="email" value="" type="email" pattern="^[\w_-]*@[\w.]*\.[\w]*" required>
         <button type="submit">Отправить</button>
     </form>
     </body>
